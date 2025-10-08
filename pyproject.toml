@@ -1,0 +1,30 @@
+[project]
+name = "ml-basics"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Manush", email = "manushkalwari141@gmail.com" }
+]
+
+[tool.poetry]
+package-mode = false
+
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+torch = "^2.8.0"
+torchvision = "^0.23.0"
+torchaudio = "^2.8.0"
+matplotlib = "^3.10.6"
+numpy = "^2.3.3"
+pandas = "^2.3.3"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=6.30.1,<7.0.0)"
+]
